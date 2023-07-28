@@ -21,7 +21,7 @@ function App() {
         <option>Sunscreen</option>
       </select>
       <ul id="pl-info">
-        <li>Product Brand: Tatcha</li>
+        <li>Product Brand: test test</li>
         <li>Product Name: Rice Wash</li>
         <li>Purchase Date: 01/01/2023</li>
         <li>Empty Date: </li>
