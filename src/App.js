@@ -1,25 +1,37 @@
 import logo from './logo.svg';
 import './App.css';
 
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="product-card">
+    <div id="product-image">
+      <img src="images/Cleanser.png" alt="cleanser image" />
     </div>
+    <div id="product-info">
+      <label htmlFor="product"></label>
+      <select name="product" id="product">
+        <option>Select</option>
+        <option>Cleanser</option>
+        <option>Toner</option>
+        <option>Serum</option>
+        <option>Moisturizer</option>
+        <option>Face Oil</option>
+        <option>Face Mask</option>
+        <option>Sunscreen</option>
+      </select>
+      <ul id="pl-info">
+        <li>Product Brand: Tatcha</li>
+        <li>Product Name: Rice Wash</li>
+        <li>Purchase Date: 01/01/2023</li>
+        <li>Empty Date: </li>
+        <li>Expiry Date: 01/01/2024</li>
+      </ul>
+    </div>
+  </div>
+  
   );
 }
+
 
 export default App;

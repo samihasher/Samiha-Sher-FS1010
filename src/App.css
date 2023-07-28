@@ -1,3 +1,14 @@
+#product-card {
+  background-color: #8EB18A;
+  min-width: 300px;
+  display: flex;
+  padding: 2%;
+  flex-grow: 2;
+  flex-basis: 22%;
+}
+
+
+
 .App {
   text-align: center;
 }
@@ -36,3 +47,4 @@
     transform: rotate(360deg);
   }
 }
+
