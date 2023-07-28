@@ -1,14 +1,15 @@
 import React from 'react';
+import { ProductCardContainer, ProductImage, ProductInfoList, ProductSelect } from './ProductStyles';
 
 function ProductCard({ imageSrc, altText, productBrand, productName, purchaseDate, expiryDate }) {
   return (
-    <div id="product-card">
-      <div id="product-image">
+    <ProductCardContainer>
+      <ProductImage>
         <img src={imageSrc} alt={altText} />
-      </div>
+      </ProductImage>
       <div id="product-info">
         <label htmlFor="product"></label>
-        <select name="product" id="product">
+        <ProductSelect name="product" id="product">
           <option>Select</option>
           <option>Cleanser</option>
           <option>Toner</option>
@@ -17,16 +18,16 @@ function ProductCard({ imageSrc, altText, productBrand, productName, purchaseDat
           <option>Face Oil</option>
           <option>Face Mask</option>
           <option>Sunscreen</option>
-        </select>
-        <ul id="pl-info">
+        </ProductSelect>
+        <ProductInfoList id="pl-info">
           <li>Product Brand: {productBrand}</li>
           <li>Product Name: {productName}</li>
           <li>Purchase Date: {purchaseDate}</li>
           <li>Empty Date:</li>
           <li>Expiry Date: {expiryDate}</li>
-        </ul>
+        </ProductInfoList>
       </div>
-    </div>
+    </ProductCardContainer>
   );
 }
 
