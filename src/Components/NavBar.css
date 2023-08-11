@@ -1,0 +1,19 @@
+#navbar-section {
+    background-color: #734B5E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25 px;
+    color: white;
+    padding: 10px;
+
+}
+
+#nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    list-style: none;
+    font-size: 100%;
+    font-weight: 600;
+}

@@ -1,6 +1,41 @@
-Updated Read Me
-# Diagram
+# Assignment 2
+## Plan for web app structure:
+### Features:
+* Routines
+    * Product Card
+* NavBar Menu:
+    * Routines
+    * Blog
+    * Account
+    * About Us
 
+**Routines**
+* Props:
+    * Array of product card objects containing product information, images
+* State:
+    * none
+* Children components
+    * Product card
+        * Props:
+            * Product info (brand, product type, empty date)
+    * State:
+        * Add More button
+    *   Children:
+        * None (?)
+
+***NavBar Menu***
+* Props:
+    * Array of page objects which include the URL & the page name
+    * isActive - Is the page currently active
+* State:
+    * None
+* Children Components:
+    * Link	
+        * Props:
+            * Name
+            * url
+    * State: none
+    * Children: none
 
 # Getting Started with Create React App
 

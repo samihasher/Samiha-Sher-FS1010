@@ -5,10 +5,15 @@ import './App.css';
 import React from 'react';
 import ProductCard from './ProductCard';
 import { ProductsContainer } from './ProductStyles';
+import Footer from './Components/Footer';
+import NavBar from './Components/NavBar';
+
 
 function App() {
   return (
+    
     <section id="products">
+      <NavBar/>
         <ProductsContainer>
       <ProductCard
         imageSrc="images/Cleanser.png"
@@ -64,14 +69,10 @@ function App() {
       />
 
 </ProductsContainer>
+<Footer/>
+</section>
 
-
-
-
-
-
-
-    </section>
+  
   );
 }
 
