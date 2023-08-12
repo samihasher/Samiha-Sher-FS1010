@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import ProductCard from './ProductCard';
 import { ProductsContainer } from './ProductStyles';
@@ -8,6 +8,7 @@ import products from './Data';
 
 
 function App() {
+  const [numBlankCards, setNumBlankCards] = useState(0);
   return (
 
     <section id="products">
@@ -25,10 +26,15 @@ function App() {
           expiryDate={product.expiryDate}
 />
         ))}
+        {[...Array(numBlankCards)].map((_, index) => (
+          <ProductCard key={`blank-${index}`} />
+        ))}
       </ProductsContainer>
+      <div className="Add-Button">
+          <button onClick={() => setNumBlankCards(numBlankCards + 1)}>Add More</button>
+        </div>
       <Footer />
     </section>
-
   );
 }
 
