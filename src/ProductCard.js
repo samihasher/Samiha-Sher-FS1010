@@ -1,7 +1,10 @@
 import React from 'react';
 import { ProductCardContainer, ProductImage, ProductInfoList, ProductSelect } from './ProductStyles';
 
-function ProductCard({ imageSrc, altText, productBrand, productName, purchaseDate, expiryDate }) {
+function ProductCard({ imageSrc, altText, productBrand, productName, purchaseDate, expiryDate })
+ {
+  console.log(imageSrc, altText, productBrand, productName, purchaseDate, expiryDate);
+
   return (
     <ProductCardContainer>
       <ProductImage>
@@ -26,6 +29,7 @@ function ProductCard({ imageSrc, altText, productBrand, productName, purchaseDat
           <li>Empty Date:</li>
           <li>Expiry Date: {expiryDate}</li>
         </ProductInfoList>
+
       </div>
     </ProductCardContainer>
   );
