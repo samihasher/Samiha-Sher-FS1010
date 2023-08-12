@@ -13,8 +13,15 @@ const Footer = () => {
         <li>Contact Us</li>
       </ul>
 
+      <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
       <img id="ig-logo" src="images/instagram logo.png" alt="ig logo" width="35" height="35" />
-    </section>
+
+        </a>   
+      </section>
   );
 };
 
