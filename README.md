@@ -1,6 +1,6 @@
 # Assignment 2
 ## Plan for web app structure:
-### Features:
+**Features:**
 * Routines
     * Product Card
 * NavBar Menu:
@@ -23,7 +23,7 @@
     *   Children:
         * None (?)
 
-***NavBar Menu***
+**NavBar Menu**
 * Props:
     * Array of page objects which include the URL & the page name
     * isActive - Is the page currently active
