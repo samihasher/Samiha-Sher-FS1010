@@ -1,19 +1,39 @@
+
+
 #navbar-section {
     background-color: #734B5E;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 25 px;
+    font-size: 20px; 
     color: white;
     padding: 10px;
-
-}
-
-#nav-list {
+  }
+  
+  #nav-list {
     display: flex;
     justify-content: space-between;
     width: 25%;
     list-style: none;
     font-size: 100%;
     font-weight: 600;
-}
+  }
+  
+  
+  #nav-list li a {
+    text-decoration: none;
+    color: white; 
+    transition: color 0.3s;
+    margin-right: 5px;
+  }
+  
+  
+  #nav-list li a:hover {
+    color: #8EB18A; 
+  }
+  
+  
+  #nav-list li a.active {
+    color: #8EB18A; 
+  }
+  

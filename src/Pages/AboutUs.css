@@ -5,8 +5,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 500px;
-    width: 500px;
+    height: 100vh;
+    width: 700px;
     margin: 0 auto;
   }
   
