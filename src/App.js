@@ -6,14 +6,15 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
+  Switch
 } from 'react-router-dom';
 import AboutUs from './Pages/AboutUs';
 import Home from './Pages/Home';
 import Routines from './Pages/Routines';
+import Account from './Pages/Account';
 
 
 function App() {
-  const [numBlankCards, setNumBlankCards] = useState(0);
   return (
     <Router>
            
@@ -28,6 +29,7 @@ function App() {
 
         <Route path="/about" element = {<AboutUs/>}/>
         <Route path="/routines" element = {<Routines/>}/>
+        <Route path="/account" element = {<Account/>}/>
       </Routes>
         
       <Footer />

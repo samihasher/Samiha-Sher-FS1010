@@ -1,31 +1,35 @@
 import React from 'react';
 import './NavBar.css';
-import {
-  Link
-} from 'react-router-dom';
-
-
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-
     <section id="navbar-section">
       <img src="images/myskinlogo.jpg" alt="myskin logo" width="65" height="65" />
 
       <ul id="nav-list">
-      <li>
-          <Link to="/"> Home </Link>
+        <li>
+          <NavLink to="/" exact activeClassName="active">
+            Home
+          </NavLink>
         </li>
         <li>
-        <Link to="/routines"> Routines </Link>
+          <NavLink to="/routines" activeClassName="active">
+            Routines
+          </NavLink>
         </li>
         <li>
-          <Link to="/about">About Us</Link>
+          <NavLink to="/about" activeClassName="active">
+            About Us
+          </NavLink>
         </li>
-        <li>Account</li>
+        <li>
+          <NavLink to="/account" activeClassName="active">
+            Account
+          </NavLink>
+        </li>
       </ul>
     </section>
-
   );
 };
 
