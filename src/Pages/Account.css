@@ -1,0 +1,49 @@
+
+.account-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0; 
+  }
+  
+  .profile {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff; 
+    border-radius: 5px;
+  }
+  
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .username {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .email {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .logout-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .logout-button:hover {
+    background-color: #0056b3; 
+  }
+  

@@ -1,37 +1,41 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Footer from './Components/Footer';
+import NavBar from './Components/NavBar';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Switch
+} from 'react-router-dom';
+import AboutUs from './Pages/AboutUs';
+import Home from './Pages/Home';
+import Routines from './Pages/Routines';
+import Account from './Pages/Account';
 
 
 function App() {
   return (
-    <div id="product-card">
-    <div id="product-image">
-      <img src="images/Cleanser.png" alt="cleanser image" />
-    </div>
-    <div id="product-info">
-      <label htmlFor="product"></label>
-      <select name="product" id="product">
-        <option>Select</option>
-        <option>Cleanser</option>
-        <option>Toner</option>
-        <option>Serum</option>
-        <option>Moisturizer</option>
-        <option>Face Oil</option>
-        <option>Face Mask</option>
-        <option>Sunscreen</option>
-      </select>
-      <ul id="pl-info">
-        <li>Product Brand: Tatcha</li>
-        <li>Product Name: Rice Wash</li>
-        <li>Purchase Date: 01/01/2023</li>
-        <li>Empty Date: </li>
-        <li>Expiry Date: 01/01/2024</li>
-      </ul>
-    </div>
+    <Router>
+           
+   
+
+<div>
+        <NavBar />
+        <Routes>
+        <Route path="/" exact element = {<Home/>}/>
+ 
+        <Route path="/home" exact element = {<Home/>}/>
+
+        <Route path="/about" element = {<AboutUs/>}/>
+        <Route path="/routines" element = {<Routines/>}/>
+        <Route path="/account" element = {<Account/>}/>
+      </Routes>
+        
+      <Footer />
   </div>
-  
+    </Router>
   );
 }
-
 
 export default App;

@@ -1,3 +1,15 @@
+.Add-Button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.title {
+  text-align: center;
+}
+
+
 #product-card {
   background-color: #8EB18A;
   min-width: 300px;

@@ -1,0 +1,27 @@
+
+
+.AUcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 700px;
+    margin: 0 auto;
+  }
+  
+  .green-box {
+    background-color: #8EB18A;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  
+  .green-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
