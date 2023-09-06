@@ -19,7 +19,6 @@ const Navbar = () => {
         <li>
         <Link to="/routines"> Routines </Link>
         </li>
-        <li>Blog</li>
         <li>
           <Link to="/about">About Us</Link>
         </li>

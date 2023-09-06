@@ -1,0 +1,84 @@
+  .Hcontainer {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1px 0;
+  }
+  
+  .image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+
+  .image img.image2 {
+    width: 338px; 
+    height: 225px; 
+  }
+  
+  
+  .text p {
+    font-size: 65px;
+    font-weight: bold;
+  }
+
+  .row2green p {
+    font-size: 65px; 
+  }
+  
+  .row2green {
+    background-color: #8EB18A;
+    color: #fff;
+    padding: 1px 55px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 328px;
+  }
+  
+  .row .image img.image3 {
+    height: 328px;
+  }
+  
+  .r3green-box {
+    background-color: #3F6634;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+  }
+  .r3green-box p {
+    font-size: 35px; 
+    padding-left: 200px;
+  }
+  
+  .r3green-box ul {
+    padding-left: 200px;
+
+  }
+  
+  .r3green-box li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .row:last-child {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .row:last-child .image img,
+  .row:last-child .r3green-box {
+    flex: 1;
+  }
+  
